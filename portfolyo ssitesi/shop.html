@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP</title>
+   <link rel="stylesheet" href="SHOP.CSS">
+</head>
+<body>
+    <div class="container">
+        <h1>SHOPPİNG</h1>
+        <label for="selectOption">Ürün:</label>
+        <select id="selectOption" onchange="hesapla()">
+            <option value="eticaret">e-ticaret</option>
+            <option value="blog">blog</option>
+        </select>
+        <br>
+        <label for="urun">Gün:</label>
+        <input type="number" id="urun" min="1" value="1" onchange="hesapla()">
+        <br>
+        <label for="sayfa">Sayfa:</label>
+        <input type="number" id="sayfa" min="1" value="1" onchange="hesapla()">
+        <br>
+        <p id="demo"></p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
